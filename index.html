@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>动态随机排列图片墙</title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/jquery.imgWall.randomArrange.js" ></script>
+		<script>
+			$(function(){
+				imgWallArrange(".img_container",6,3,120);
+			});
+		</script>
+		<style>
+			#image_wall{
+				width:740px;
+				height:380px;
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin:-210px 0px 0px -370px;
+				background-color:#050202;
+			}
+			#image_wall .img_container{
+				height:360px;
+				position:relative;
+				margin:10px;
+			}
+			#image_wall .img_news{
+				position: absolute;
+				top:50%;
+				left:50%;
+				width:100px;
+				height:100px;
+			}
+			/*动态样式1*/
+			
+			#image_wall img{
+				width:100px;
+				height:100px;
+			}
+			#image_wall .img_news{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="image_wall">
+			<div style="display: none;">
+				指定区域生成随机数量的1:1,1:2,2:1,2:2比例的方块，并且将区域铺满，
+				本例中，单位比例的像素为120px
+			</div>
+			<div class="img_container">
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+				<div class="img_news"><a href=""><img src="index.jpg"/></a></div>
+			</div>
+		</div>
+	</body>
+</html>
